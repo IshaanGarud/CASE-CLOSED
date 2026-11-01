@@ -125,4 +125,3 @@ start "" "http://localhost:5173"
 
 echo Keep both service windows open while playing.
 pause
-
