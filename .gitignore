@@ -25,3 +25,7 @@ out/
 # OS
 .DS_Store
 Thumbs.db
+
+# IDE and editor settings
+**/.idea/
+.vscode/

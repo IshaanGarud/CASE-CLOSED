@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSmoke" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#180b06" />
+      <stop offset="50%" stop-color="#2a1209" />
+      <stop offset="100%" stop-color="#090503" />
+    </linearGradient>
+    <linearGradient id="copperPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffedd5" />
+      <stop offset="50%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#9a3412" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#bgSmoke)" />
+  <rect x="25" y="25" width="550" height="750" fill="none" stroke="#ea580c" stroke-width="1.5" opacity="0.3" />
+  <rect x="35" y="35" width="530" height="730" fill="none" stroke="#ea580c" stroke-width="1" opacity="0.15" />
+
+  <g transform="translate(300, 75)">
+    <rect x="-85" y="-14" width="170" height="28" rx="6" fill="#200d06" stroke="#f97316" stroke-width="1" />
+    <text x="0" y="5" font-family="'Courier Prime', monospace" font-size="11" fill="#fdba74" font-weight="bold" letter-spacing="3" text-anchor="middle">CASE FILE #CC-003</text>
+  </g>
+
+  <!-- Tommy Gun & Bank Vault Silhouette -->
+  <g transform="translate(300, 310)">
+    <!-- Vault Door Circle -->
+    <circle cx="0" cy="10" r="110" fill="#130804" stroke="#7c2d12" stroke-width="3" />
+    <circle cx="0" cy="10" r="85" fill="#1a0a05" stroke="#9a3412" stroke-width="1" stroke-dasharray="8 6" />
+    <!-- Vault Wheel Handle -->
+    <circle cx="0" cy="10" r="30" fill="#2c1007" stroke="#ea580c" stroke-width="3" />
+    <line x1="-50" y1="10" x2="50" y2="10" stroke="#ea580c" stroke-width="4" stroke-linecap="round" />
+    <line x1="0" y1="-40" x2="0" y2="60" stroke="#ea580c" stroke-width="4" stroke-linecap="round" />
+    <!-- Bullet Holes with Smoke -->
+    <circle cx="-65" cy="-55" r="4" fill="#000" stroke="#431407" stroke-width="2" />
+    <circle cx="75" cy="45" r="4" fill="#000" stroke="#431407" stroke-width="2" />
+  </g>
+
+  <text x="300" y="530" font-family="'Cinzel', serif" font-size="34" font-weight="900" fill="url(#copperPlate)" letter-spacing="3" text-anchor="middle">
+    THE SPEAKEASY
+  </text>
+  <text x="300" y="575" font-family="'Cinzel', serif" font-size="36" font-weight="900" fill="url(#copperPlate)" letter-spacing="3" text-anchor="middle">
+    SYNDICATE HEIST
+  </text>
+  <text x="300" y="610" font-family="'Playfair Display', serif" font-size="16" font-style="italic" fill="#fdba74" letter-spacing="1" text-anchor="middle">
+    Chicago Gangland Betrayal • Coming Soon
+  </text>
+
+  <g transform="translate(300, 660)">
+    <rect x="-140" y="-15" width="280" height="30" rx="15" fill="#1c0b05" stroke="#431407" />
+    <text x="0" y="5" font-family="'Courier Prime', monospace" font-size="11" fill="#9a3412" text-anchor="middle">EXPANSION PACK • SPRING 1929</text>
+  </g>
+
+  <g transform="translate(300, 715)">
+    <rect x="-70" y="-12" width="140" height="24" rx="4" fill="#270e06" stroke="#7c2d12" stroke-width="1" />
+    <text x="0" y="4" font-family="'Courier Prime', monospace" font-size="10" font-weight="bold" fill="#ea580c" letter-spacing="2" text-anchor="middle">CLASSIFIED</text>
+  </g>
+</svg>
+

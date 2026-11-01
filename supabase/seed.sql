@@ -1,0 +1,15 @@
+-- CASE CLOSED seed data
+-- NO ORIGINAL CC-001 SEED DATA WAS CREATED OR SHARED IN THIS CONVERSATION.
+-- This file is intentionally a documented placeholder, not executable seed data.
+--
+-- Required CC-001 content from the project requirements:
+--   * exactly 3 investigation locations
+--   * exactly 3 suspects
+--   * exactly 5 evidence items
+--   * investigation tasks
+--   * interrogation dialogues
+--   * hidden clues and prerequisites
+--   * one logically consistent final solution
+--
+-- Do not invent or insert a culprit/solution during recovery.
+-- Seed content must be designed and approved by the team.

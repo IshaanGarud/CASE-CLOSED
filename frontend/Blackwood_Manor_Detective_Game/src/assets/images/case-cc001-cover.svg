@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c0e14" />
+      <stop offset="30%" stop-color="#141824" />
+      <stop offset="60%" stop-color="#2a0d14" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+
+    <radialGradient id="hearthGlow" cx="50%" cy="65%" r="45%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.6" />
+      <stop offset="40%" stop-color="#b91c1c" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0c0e14" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="goldPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf5" />
+      <stop offset="25%" stop-color="#d4af37" />
+      <stop offset="60%" stop-color="#996515" />
+      <stop offset="100%" stop-color="#f3e5ab" />
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#bgGrad)" />
+
+  <!-- Atmospheric Glow from Hearth -->
+  <rect width="600" height="800" fill="url(#hearthGlow)" />
+
+  <!-- Vintage Art Deco Double Border Frame -->
+  <rect x="25" y="25" width="550" height="750" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.4" />
+  <rect x="35" y="35" width="530" height="730" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.2" />
+
+  <!-- Corner Deco Motifs -->
+  <g stroke="#d4af37" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M 25,65 L 65,65 L 65,25" />
+    <path d="M 575,65 L 535,65 L 535,25" />
+    <path d="M 25,735 L 65,735 L 65,775" />
+    <path d="M 575,735 L 535,735 L 535,775" />
+  </g>
+
+  <!-- Bureau Badge Header -->
+  <g transform="translate(300, 75)">
+    <rect x="-85" y="-14" width="170" height="28" rx="6" fill="#1b120c" stroke="#d4af37" stroke-width="1.2" />
+    <text x="0" y="5" font-family="'Courier Prime', monospace" font-size="11" fill="#f5eedc" font-weight="bold" letter-spacing="3" text-anchor="middle">CASE FILE #CC-001</text>
+  </g>
+
+  <!-- Dramatic Center Artwork: Masquerade Mask, Tumbler & Manor Silhouette -->
+  <!-- Manor Tower in Background -->
+  <path d="M 250,340 L 250,220 L 280,180 L 300,120 L 320,180 L 350,220 L 350,340 Z" fill="#090c12" />
+  <rect x="290" y="220" width="20" height="35" rx="10" fill="#ffd54f" opacity="0.7" />
+
+  <!-- Venetian Masquerade Gold & Velvet Mask -->
+  <g transform="translate(300, 310) scale(1.1)" filter="url(#shadow)">
+    <!-- Mask Wing Left -->
+    <path d="M 0,-15 C -40,-45 -110,-40 -130,5 C -135,35 -90,65 -50,55 C -25,48 -10,15 0,10 Z" fill="#180e0e" stroke="#d4af37" stroke-width="2" />
+    <!-- Mask Wing Right -->
+    <path d="M 0,-15 C 40,-45 110,-40 130,5 C 135,35 90,65 50,55 C 25,48 10,15 0,10 Z" fill="#2d1017" stroke="#d4af37" stroke-width="2" />
+    <!-- Eye Openings -->
+    <path d="M -80,5 Q -55,-10 -35,5 Q -55,20 -80,5 Z" fill="#0c0e14" stroke="#d4af37" stroke-width="1" />
+    <path d="M 80,5 Q 55,-10 35,5 Q 55,20 80,5 Z" fill="#0c0e14" stroke="#d4af37" stroke-width="1" />
+    <!-- Gold Filigree Decors -->
+    <path d="M -115,10 Q -65,-25 -20,-5" fill="none" stroke="#f3e5ab" stroke-width="1.2" opacity="0.7" />
+    <path d="M 115,10 Q 65,-25 20,-5" fill="none" stroke="#f3e5ab" stroke-width="1.2" opacity="0.7" />
+  </g>
+
+  <!-- Poisoned Crystal Tumbler in Foreground -->
+  <g transform="translate(300, 410)" filter="url(#shadow)">
+    <!-- Tumbler Body -->
+    <path d="M -30,-40 L -24,35 Q 0,42 24,35 L 30,-40 Z" fill="#1e293b" opacity="0.8" stroke="#94a3b8" stroke-width="1.5" />
+    <!-- Amber Scotch Dregs -->
+    <path d="M -26,10 L -24,35 Q 0,42 24,35 L 26,10 Q 0,15 -26,10 Z" fill="#d97706" opacity="0.9" />
+    <!-- Poison Skull Emblem Micro-stamp -->
+    <circle cx="0" cy="24" r="5" fill="#450a0a" />
+    <circle cx="-1.5" cy="23" r="1" fill="#fff" />
+    <circle cx="1.5" cy="23" r="1" fill="#fff" />
+  </g>
+
+  <!-- Typography: Big Cinematic Title -->
+  <text x="300" y="525" font-family="'Cinzel', serif" font-size="34" font-weight="900" fill="url(#goldPlate)" letter-spacing="4" text-anchor="middle" filter="url(#shadow)">
+    THE BLACKWOOD
+  </text>
+  <text x="300" y="570" font-family="'Cinzel', serif" font-size="36" font-weight="900" fill="url(#goldPlate)" letter-spacing="4" text-anchor="middle" filter="url(#shadow)">
+    MANOR MYSTERY
+  </text>
+
+  <!-- Subtitle Ribbon -->
+  <text x="300" y="605" font-family="'Playfair Display', serif" font-size="16" font-style="italic" fill="#e2d8cc" letter-spacing="1" text-anchor="middle">
+    Midnight at the Masquerade • October 31, 1927
+  </text>
+
+  <!-- Specs Pill Ribbon -->
+  <g transform="translate(300, 650)">
+    <rect x="-170" y="-16" width="340" height="32" rx="16" fill="#131722" stroke="#2e3549" stroke-width="1" />
+    <text x="0" y="5" font-family="'Courier Prime', monospace" font-size="11" fill="#9ca3af" text-anchor="middle">
+      3 LOCATIONS • 3 SUSPECTS • 5 EXHIBITS
+    </text>
+  </g>
+
+  <!-- Bottom Stamp -->
+  <g transform="translate(300, 715)">
+    <rect x="-80" y="-12" width="160" height="24" rx="4" fill="#7f1d1d" stroke="#ef4444" stroke-width="1" />
+    <text x="0" y="4" font-family="'Courier Prime', monospace" font-size="10" font-weight="bold" fill="#ffffff" letter-spacing="2" text-anchor="middle">PLAYABLE CASE</text>
+  </g>
+</svg>
+

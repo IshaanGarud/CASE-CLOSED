@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="clockPhotoBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c160c" />
+      <stop offset="100%" stop-color="#0a0703" />
+    </linearGradient>
+    <radialGradient id="brassGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="50%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#713f12" />
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#clockPhotoBg)" />
+
+  <!-- Macro View of Clockwork Gear & Escapement -->
+  <g transform="translate(190, 135)">
+    <!-- Main Brass Cogwheel -->
+    <circle cx="0" cy="0" r="75" fill="url(#brassGlow)" stroke="#713f12" stroke-width="3" />
+    <!-- Gear Teeth -->
+    <g fill="#ca8a04" stroke="#854d0e" stroke-width="1.5">
+      <rect x="-6" y="-84" width="12" height="15" />
+      <rect x="-6" y="69" width="12" height="15" />
+      <rect x="-84" y="-6" width="15" height="12" />
+      <rect x="69" y="-6" width="15" height="12" />
+      <rect x="-60" y="-60" width="12" height="14" transform="rotate(45 -54 -53)" />
+      <rect x="42" y="42" width="12" height="14" transform="rotate(45 48 49)" />
+      <rect x="42" y="-60" width="12" height="14" transform="rotate(-45 48 -53)" />
+      <rect x="-60" y="42" width="12" height="14" transform="rotate(-45 -54 49)" />
+    </g>
+
+    <!-- Gear Spokes & Center Pivot -->
+    <circle cx="0" cy="0" r="48" fill="#1c1917" stroke="#a16207" stroke-width="2" />
+    <circle cx="0" cy="0" r="14" fill="#d97706" stroke="#451a03" stroke-width="2" />
+    <circle cx="0" cy="0" r="4" fill="#0f172a" />
+
+    <!-- Mechanical Scratches from Screwdriver / Tool Tampering -->
+    <g stroke="#fef08a" stroke-width="2" stroke-linecap="round">
+      <line x1="25" y1="-30" x2="42" y2="-12" />
+      <line x1="28" y1="-26" x2="46" y2="-8" />
+      <line x1="32" y1="-35" x2="48" y2="-18" />
+    </g>
+
+    <!-- Clock Hands Overlay: Showing 11:42 PM -->
+    <g transform="translate(90, 50)">
+      <circle cx="0" cy="0" r="32" fill="#fffbeb" stroke="#b45309" stroke-width="2" />
+      <line x1="0" y1="0" x2="-6" y2="-22" stroke="#1c1917" stroke-width="3" stroke-linecap="round" />
+      <line x1="0" y1="0" x2="-22" y2="-8" stroke="#1c1917" stroke-width="2" stroke-linecap="round" />
+      <circle cx="0" cy="0" r="3" fill="#b45309" />
+    </g>
+
+    <!-- Forensic Reticle Tool Circle -->
+    <circle cx="35" cy="-22" r="28" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 2" />
+    <text x="70" y="-35" font-family="'Courier Prime', monospace" font-size="9" fill="#f87171" font-weight="bold">FORCED GEAR SCRATCHES</text>
+    <line x1="55" y1="-28" x2="68" y2="-33" stroke="#ef4444" stroke-width="1" />
+  </g>
+
+  <!-- Specimen Label -->
+  <rect x="20" y="255" width="360" height="28" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="35" y="273" font-family="'Courier Prime', monospace" font-size="11" fill="#f59e0b">
+    FORENSIC: Escapement ratchet wound backward from 11:30 to 11:42
+  </text>
+</svg>
+

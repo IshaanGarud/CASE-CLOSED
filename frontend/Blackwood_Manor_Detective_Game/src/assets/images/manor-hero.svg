@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#040609" />
+      <stop offset="40%" stop-color="#090d16" />
+      <stop offset="75%" stop-color="#121824" />
+      <stop offset="100%" stop-color="#080a0e" />
+    </linearGradient>
+
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fdfbf5" stop-opacity="0.9" />
+      <stop offset="25%" stop-color="#e2d4b7" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#c59b27" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#080a0e" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="windowGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd54f" />
+      <stop offset="60%" stop-color="#ff8f00" />
+      <stop offset="100%" stop-color="#b71c1c" />
+    </linearGradient>
+
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe082" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#ffb300" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ff8f00" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f9f1d8" />
+      <stop offset="35%" stop-color="#d4af37" />
+      <stop offset="70%" stop-color="#aa7c11" />
+      <stop offset="100%" stop-color="#e5c158" />
+    </linearGradient>
+
+    <filter id="blurFilter">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="640" fill="url(#skyGrad)" />
+
+  <!-- Moon & Cloud Fog -->
+  <circle cx="820" cy="180" r="140" fill="url(#moonGlow)" />
+  <circle cx="820" cy="180" r="48" fill="#fcf8ec" opacity="0.85" />
+  
+  <!-- Storm Clouds -->
+  <path d="M 680,160 Q 750,110 840,150 Q 920,130 980,180 Q 940,220 860,200 Q 760,230 680,160 Z" fill="#0d111a" opacity="0.85" filter="url(#blurFilter)" />
+  <path d="M 100,80 Q 250,30 420,100 Q 560,70 650,130 Q 520,180 380,140 Q 220,170 100,80 Z" fill="#0b0f17" opacity="0.9" filter="url(#blurFilter)" />
+
+  <!-- Distant Mountain Ridge -->
+  <path d="M 0,420 L 160,380 L 320,400 L 510,360 L 720,390 L 940,350 L 1120,380 L 1200,365 L 1200,640 L 0,640 Z" fill="#070a0f" />
+
+  <!-- Blackwood Manor Silhouette & Gothic Architecture -->
+  <!-- Main Hall & Wings -->
+  <path d="M 380,480 L 380,260 L 420,240 L 420,160 L 450,120 L 480,160 L 480,240 L 520,260 L 520,480 Z" fill="#05070a" />
+  <!-- Left Spire Tower -->
+  <path d="M 280,480 L 280,290 L 310,240 L 310,140 L 330,80 L 350,140 L 350,240 L 380,290 L 380,480 Z" fill="#06080d" />
+  <!-- Central Grand Tower -->
+  <path d="M 500,480 L 500,220 L 540,180 L 540,90 L 565,30 L 590,90 L 590,180 L 630,220 L 630,480 Z" fill="#05070a" />
+  <!-- Right Wing & Conservatory Roof -->
+  <path d="M 630,480 L 630,280 L 680,250 L 760,250 L 800,290 L 800,480 Z" fill="#06080d" />
+  <!-- Conservatory Glass Dome -->
+  <path d="M 760,480 L 760,340 Q 840,290 920,340 L 920,480 Z" fill="#040608" />
+
+  <!-- Illuminated Windows (The Study with Murder Scene Glow) -->
+  <rect x="535" y="240" width="30" height="55" rx="14" fill="url(#windowGlow)" filter="url(#softGlow)" />
+  <rect x="548" y="240" width="4" height="55" fill="#1c1005" />
+  <rect x="535" y="266" width="30" height="4" fill="#1c1005" />
+
+  <!-- Secondary Dim Windows -->
+  <rect x="330" y="320" width="18" height="35" rx="8" fill="#d97706" opacity="0.4" />
+  <rect x="440" y="310" width="22" height="40" rx="10" fill="#d97706" opacity="0.35" />
+  <rect x="660" y="310" width="22" height="40" rx="10" fill="#b91c1c" opacity="0.4" />
+  <!-- Conservatory Glass Panes Glow -->
+  <path d="M 780,470 L 780,365 Q 840,320 900,365 L 900,470 Z" fill="#10b981" opacity="0.15" />
+
+  <!-- Manor Grounds, Stone Balustrade & Pine Trees -->
+  <path d="M 0,480 Q 300,460 600,480 Q 900,470 1200,490 L 1200,640 L 0,640 Z" fill="#05070b" />
+  
+  <!-- Pine Trees Silhouettes -->
+  <path d="M 120,480 L 140,430 L 130,430 L 150,380 L 135,380 L 160,310 L 185,380 L 170,380 L 190,430 L 180,430 L 200,480 Z" fill="#030406" />
+  <path d="M 200,490 L 220,440 L 210,440 L 230,390 L 220,390 L 245,340 L 270,390 L 260,390 L 280,440 L 270,440 L 290,490 Z" fill="#030406" />
+  <path d="M 940,500 L 960,440 L 950,440 L 970,390 L 960,390 L 985,330 L 1010,390 L 1000,390 L 1020,440 L 1010,440 L 1030,500 Z" fill="#030406" />
+  <path d="M 1040,510 L 1060,450 L 1085,370 L 1110,450 L 1130,510 Z" fill="#030406" />
+
+  <!-- Wet Reflective Driveway -->
+  <path d="M 420,640 L 530,480 L 670,480 L 820,640 Z" fill="#0b0e14" />
+  <path d="M 480,640 L 560,490 L 640,490 L 740,640 Z" fill="#131924" opacity="0.6" />
+  <!-- Water Puddle Reflections -->
+  <ellipse cx="610" cy="560" rx="90" ry="12" fill="#d97706" opacity="0.25" filter="url(#blurFilter)" />
+  <ellipse cx="530" cy="590" rx="60" ry="8" fill="#ffd54f" opacity="0.2" filter="url(#blurFilter)" />
+
+  <!-- Street Lamp with Volumetric Light Beam -->
+  <path d="M 360,560 L 364,440 L 372,435 L 368,430 L 360,430 L 356,435 L 360,440 Z" fill="#1e222d" />
+  <circle cx="362" cy="433" r="70" fill="url(#lampGlow)" />
+  <polygon points="362,433 220,640 480,640" fill="#ffd54f" opacity="0.08" />
+
+  <!-- Detective Silhouette (Trenchcoat & Fedora, Collar turned up) -->
+  <g transform="translate(440, 440) scale(0.9)">
+    <!-- Shadow on Wet Ground -->
+    <ellipse cx="60" cy="170" rx="45" ry="10" fill="#020304" opacity="0.9" />
+    <!-- Coat Body -->
+    <path d="M 35,65 Q 25,110 20,165 L 100,165 Q 95,110 85,65 Z" fill="#020305" />
+    <!-- Coat Tail Flutter -->
+    <path d="M 20,130 Q 5,145 0,160 L 25,160 Z" fill="#020305" />
+    <!-- Arms & Shoulders -->
+    <path d="M 22,65 Q 15,95 25,120 L 38,115 Q 32,90 40,65 Z" fill="#030406" />
+    <path d="M 98,65 Q 105,95 95,120 L 82,115 Q 88,90 80,65 Z" fill="#030406" />
+    <!-- Raised Collar -->
+    <polygon points="40,55 30,35 50,45 60,35 70,45 90,35 80,55" fill="#020305" />
+    <!-- Fedora Hat -->
+    <ellipse cx="60" cy="30" rx="28" ry="6" fill="#030406" />
+    <path d="M 42,28 C 42,15 48,12 60,12 C 72,12 78,15 78,28 Z" fill="#020305" />
+    <!-- Cigar Cherry Red Glow -->
+    <circle cx="68" cy="44" r="2" fill="#ff3d00" filter="url(#softGlow)" />
+    <!-- Smoke Whisps -->
+    <path d="M 68,43 Q 74,35 70,25 Q 66,15 72,5" stroke="#cfd8dc" stroke-width="1.2" fill="none" opacity="0.4" />
+  </g>
+
+  <!-- Angled Rain Streaks -->
+  <g stroke="#90a4ae" stroke-width="0.8" opacity="0.22">
+    <line x1="80" y1="0" x2="30" y2="120" />
+    <line x1="220" y1="50" x2="170" y2="170" />
+    <line x1="380" y1="10" x2="330" y2="130" />
+    <line x1="520" y1="80" x2="470" y2="200" />
+    <line x1="680" y1="20" x2="630" y2="140" />
+    <line x1="840" y1="90" x2="790" y2="210" />
+    <line x1="990" y1="30" x2="940" y2="150" />
+    <line x1="1140" y1="70" x2="1090" y2="190" />
+    <line x1="150" y1="240" x2="100" y2="360" />
+    <line x1="320" y1="280" x2="270" y2="400" />
+    <line x1="490" y1="220" x2="440" y2="340" />
+    <line x1="710" y1="310" x2="660" y2="430" />
+    <line x1="880" y1="260" x2="830" y2="380" />
+    <line x1="1050" y1="300" x2="1000" y2="420" />
+    <line x1="210" y1="460" x2="160" y2="580" />
+    <line x1="620" y1="480" x2="570" y2="600" />
+    <line x1="830" y1="450" x2="780" y2="570" />
+  </g>
+
+  <!-- Dramatic Vignette Border -->
+  <rect width="1200" height="640" fill="none" stroke="#000000" stroke-width="20" opacity="0.6" />
+</svg>
+

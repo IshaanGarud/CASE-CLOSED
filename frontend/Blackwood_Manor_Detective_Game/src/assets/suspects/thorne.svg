@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="thorneBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1a14" />
+      <stop offset="50%" stop-color="#06120e" />
+      <stop offset="100%" stop-color="#020805" />
+    </linearGradient>
+
+    <radialGradient id="thorneLight" cx="65%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#020805" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="portraitShadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000" flood-opacity="0.9" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#thorneBg)" />
+  <rect width="400" height="500" fill="url(#thorneLight)" />
+
+  <!-- Vintage Photo Frame / Polaroid Border -->
+  <rect x="15" y="15" width="370" height="470" fill="none" stroke="#059669" stroke-width="1.5" opacity="0.4" />
+  
+  <!-- Silhouette / Detailed Character: Dr. Reginald Thorne -->
+  <g transform="translate(200, 150)" filter="url(#portraitShadow)">
+    <!-- Shoulders & Clinical Tweed Coat -->
+    <path d="M -110,250 C -105,170 -75,130 -35,115 L 35,115 C 75,130 105,170 110,250 Z" fill="#0b1712" stroke="#132e22" stroke-width="2" />
+    <!-- White High-Starched Edwardian Collar & Silk Tie -->
+    <polygon points="-22,110 -15,145 0,165 15,145 22,110 0,118" fill="#f8fafc" />
+    <polygon points="-7,130 7,130 12,190 0,210 -12,190" fill="#047857" />
+    <circle cx="0" cy="140" r="3" fill="#d4af37" /> <!-- Gold Tie Pin -->
+
+    <!-- Doctor's Waistcoat & Pocket Watch Chain -->
+    <path d="M -40,150 L -40,250 L 40,250 L 40,150 Z" fill="#042f2e" />
+    <!-- Gold Albert Chain -->
+    <path d="M -25,185 Q 0,215 20,185" fill="none" stroke="#d4af37" stroke-width="2" />
+    <circle cx="20" cy="185" r="3" fill="#fef08a" />
+
+    <!-- Neck -->
+    <rect x="-18" y="70" width="36" height="45" fill="#e2d4c0" />
+    <!-- Jaw Shadow -->
+    <path d="M -18,85 Q 0,105 18,85 Z" fill="#bfae98" />
+
+    <!-- Head / Face (Sharp, aristocratic, 50s gentleman) -->
+    <path d="M -32,25 C -34,65 -25,85 0,85 C 25,85 34,65 32,25 C 30,-15 15,-30 0,-30 C -15,-30 -30,-15 -32,25 Z" fill="#f0e2d0" />
+
+    <!-- Silvered Temples & Pomade Haircut -->
+    <path d="M -34,15 C -36,-10 -20,-35 0,-35 C 20,-35 36,-10 34,15 C 30,-5 20,-20 0,-20 C -20,-20 -30,-5 -34,15 Z" fill="#94a3b8" />
+    <!-- Sideburns silver grey -->
+    <path d="M -33,5 L -31,30 L -25,25 L -27,5 Z" fill="#cbd5e1" />
+    <path d="M 33,5 L 31,30 L 25,25 L 27,5 Z" fill="#cbd5e1" />
+
+    <!-- Round Horn-Rimmed Spectacles -->
+    <g stroke="#d4af37" stroke-width="2" fill="rgba(255,255,255,0.2)">
+      <circle cx="-14" cy="20" r="11" />
+      <circle cx="14" cy="20" r="11" />
+      <line x1="-3" y1="20" x2="3" y2="20" />
+      <line x1="-25" y1="20" x2="-32" y2="15" />
+      <line x1="25" y1="20" x2="32" y2="15" />
+    </g>
+
+    <!-- Eyes (Piercing, calculating gaze) -->
+    <circle cx="-14" cy="20" r="2.5" fill="#0f172a" />
+    <circle cx="14" cy="20" r="2.5" fill="#0f172a" />
+    <path d="M -23,10 Q -14,6 -5,10" stroke="#64748b" stroke-width="2" fill="none" />
+    <path d="M 5,10 Q 14,6 23,10" stroke="#64748b" stroke-width="2" fill="none" />
+
+    <!-- Nose & Mustache -->
+    <path d="M 0,18 L -3,40 L 4,40" stroke="#bfae98" stroke-width="1.5" fill="none" />
+    <!-- Neat Groomed Silver-Grey Mustache -->
+    <path d="M -16,50 Q 0,44 16,50 Q 0,56 -16,50 Z" fill="#94a3b8" />
+    <!-- Firm Thin Lips -->
+    <line x1="-8" y1="62" x2="8" y2="62" stroke="#991b1b" stroke-width="1.2" />
+  </g>
+
+  <!-- Top Confidential Tape / Paperclip -->
+  <rect x="140" y="8" width="120" height="18" fill="#d4af37" opacity="0.8" rx="2" />
+  <text x="200" y="21" font-family="'Courier Prime', monospace" font-size="9" font-weight="bold" fill="#052e16" text-anchor="middle" letter-spacing="2">
+    SUSPECT #01
+  </text>
+
+  <!-- Name Plate Bottom -->
+  <g transform="translate(200, 435)">
+    <rect x="-140" y="-18" width="280" height="42" rx="6" fill="#061f14" stroke="#059669" stroke-width="1.2" />
+    <text x="0" y="-2" font-family="'Cinzel', serif" font-size="15" font-weight="bold" fill="#ecfdf5" text-anchor="middle" letter-spacing="1">
+      DR. REGINALD THORNE
+    </text>
+    <text x="0" y="14" font-family="'Courier Prime', monospace" font-size="10" fill="#6ee7b7" text-anchor="middle">
+      CHIEF TOXICOLOGIST • AGE 52
+    </text>
+  </g>
+</svg>
+
