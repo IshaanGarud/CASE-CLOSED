@@ -107,7 +107,7 @@ echo Backend is ready!
 echo.
 echo Starting frontend...
 
-start "CASE CLOSED Frontend" /D "%~dp0frontend\Blackwood_Manor_Detective_Game" cmd.exe /k "npm run dev -- --host 127.0.0.1"
+start "CASE CLOSED Frontend" /D "%~dp0frontend\Blackwood_Manor_Detective_Game" cmd.exe /k "npm run dev -- --host 0.0.0.0"
 
 echo Waiting for frontend...
 
@@ -119,6 +119,12 @@ if errorlevel 1 (
     exit /b 1
 )
 
+echo.
+echo.
+echo ==========================================
+echo       PHONE CONNECTION INFORMATION
+echo ==========================================
+powershell -NoProfile -Command "Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias 'Wi-Fi' -ErrorAction SilentlyContinue | Where-Object {$_.IPAddress -notlike '169.254.*' -and $_.IPAddress -ne '127.0.0.1'} | ForEach-Object {Write-Host ('http://' + $_.IPAddress + ':5173') -ForegroundColor Green}"
 echo.
 echo CASE CLOSED IS READY!
 start "" "http://localhost:5173"
